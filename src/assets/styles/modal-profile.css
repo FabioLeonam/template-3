@@ -1,0 +1,154 @@
+.modal-profile{
+  background-color: var(--white);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+  height: 410px;
+  max-width: 365px;
+  position: absolute;
+  right: 12px;
+  top: 60px;
+}
+
+.modal-profile.show{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-profile__current-account{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.modal-profile__container-photo{
+  border: none;
+  border-radius: 50px;
+  height: 80px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 80px;
+}
+
+.modal-profile__your-photo{
+  border-radius: 50px;
+  height: 80px;
+  object-fit: cover;
+  position: absolute;
+  width: 80px;
+}
+
+.modal-profile__camera-icon{
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 50px;
+  bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  height: 25px;
+  padding: 2px;
+  right: 2px;
+  width: 25px;
+}
+
+.modal-profile__your-name{
+  color: var(--black-russian);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.modal-profile__your-email{
+  color: rgba(0,0,0,.6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.modal-profile__manage-your-account{
+  border: 1px solid var(--hawkes-blue);
+  border-radius: 15px;
+  color:#3c4043;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 16px;
+  transition: all 0.2s ease-in;
+}
+
+.modal-profile__manage-your-account:hover{
+  background-color: var(--whisper);
+}
+
+.modal-profile__add-other-account{
+  align-items: center;
+  border: 1px solid var(--hawkes-blue);
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  padding: 20px 50px;
+  transition: all 0.2s ease-in;
+}
+
+.modal-profile__add-other-account:hover{
+  background-color: var(--whisper);
+}
+
+.modal-profile__add-account-text{
+  color: rgba(0,0,0,.8);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal-profile__logout{
+  border-bottom: 1px solid var(--hawkes-blue);
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-profile__logout-button{
+  background-color: var(--white);
+  border: 1px solid var(--hawkes-blue);
+  border-radius: 5px;
+  color: rgba(0,0,0,.8);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 25px;
+  transition: all 0.2s ease-in;
+}
+
+.modal-profile__logout-button:hover{
+  background-color: var(--whisper);
+}
+
+.modal-profile__footer{
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  padding: 15px 50px;
+}
+
+.modal-profile__more-info{
+  color: rgba(0,0,0,.8);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.modal-profile__more-info:hover{
+  background-color: var(--whisper);
+}
